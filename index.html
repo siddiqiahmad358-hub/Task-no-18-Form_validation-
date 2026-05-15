@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Submission Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <form id="studentForm">
+        <h2>Student Registration Form</h2>
+        <p class="subtitle">Fill in your details below</p>
+
+        <!-- Full Name -->
+        <label for="fullname">Full Name</label> 
+        <input type="text" id="fullname" name="fullname">
+        <small class="error" id="nameError"></small>
+
+        <br><br>
+
+        <!-- Email -->
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email">
+        <small class="error" id="emailError"></small>
+
+        <br><br>
+
+        <!-- Password -->
+        <label for="Password">Password</label>
+        <input type="password" id="password" name="password">
+        <small class="error" id="passwordError"></small>
+
+        <br><br>
+
+        <!-- Confirm Password -->
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmpassword" name="confirmpassword">
+        <small class="error" id="confirmPasswordError"></small>
+
+        <br><br>
+
+        <!-- Phone Number -->
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone">
+        <small class="error" id="phoneError"></small>
+
+        <br><br>
+
+        <!-- Gender -->
+        <label for="gender">Gender</label>
+        <br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <small class="error" id="genderError"></small>
+
+        <br><br>
+
+        <!-- Course Selection -->
+        <label for="course">Select Course</label>
+        <select name="course" id="course">
+            <option value="">-- Select Course --</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Graphic Designing">Graphic Designing</option>
+            <option value="Data Science">Data Science</option>
+            <option value="Generative AI">Generative AI</option>
+            <option value="Artificial Intelligence">Artificial Intelligence</option>
+        </select>
+
+        <small class="error" id="courseError"></small>
+
+        <br><br>
+
+        <!-- Hobbies -->
+        <label>Hobbies</label><br>
+
+        <input type="checkbox" name="hobbies" id="reading" value="reading">
+        <label for="reading">Reading</label>
+
+        <input type="checkbox" name="hobbies" id="sports" value="sports">
+        <label for="sports">Sports</label>
+
+        <input type="checkbox" name="hobbies" id="traveling" value="traveling">
+        <label for="traveling">Traveling</label>
+
+        <input type="checkbox" name="hobbies" id="drawing" value="drawing">
+        <label for="drawing">Drawing</label>
+
+        <small class="error" id="hobbyError"></small>
+
+        <br><br>
+
+        <!-- About Yourself -->
+        <label for="message">About Yourself</label>
+        <textarea name="message" id="message" rows="5" cols="30"></textarea>
+
+        <small class="error" id="messageError"></small>
+
+        <br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
+    </form>
+
+    <div id="output"></div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
